@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+h1 {
+    color: #333;
+}
+
+p {
+    color: #666;
+}
+
+.hidden {
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+  }
+
+  .hover-element {
+    background-color: blue;
+    color: white;
+    padding: 20px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .hover-element:hover {
+    background-color: white;
+    color: blue;
+    transform: scale(1.1);
+  }
+
+  .animated-box {
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    animation: mymove 3s infinite;
+  }
+  
+  @keyframes mymove {
+    from {
+      transform: translateX(0px);
+    }
+    to {
+      transform: translateX(400px);
+    }
+  }
+
+  /* Your existing CSS styles */
+.chatbot {
+    border: 1px solid black;
+    padding: 10px;
+  }
+  
+  .chat-messages {
+    height: 200px;
+    overflow-y: scroll;
+  }
+
